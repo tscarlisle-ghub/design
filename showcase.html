@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carlisle Design System — Reference</title>
+<link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+
+<header class="container">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__brand" href="#">Carlisle &amp; Co. Architects</a>
+    <ul class="nav__links">
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#color">Color</a></li>
+      <li><a href="#spacing">Spacing</a></li>
+      <li><a href="#components">Components</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="container section">
+  <div class="container--read" style="margin-left:0">
+    <span class="eyebrow">Design System &nbsp;·&nbsp; v 1.0</span>
+    <h1 class="display">A pattern&nbsp;book for the practice.</h1>
+    <p class="lead">A working reference for typography, color, and the small details that give every drawing, document, and web page a consistent hand.</p>
+    <div class="cluster" style="margin-top: var(--s-6)">
+      <a class="btn" href="#components">View components</a>
+      <a class="btn btn--ghost" href="#typography">Type specimens</a>
+    </div>
+  </div>
+</section>
+
+<hr class="container" style="border:0; border-top:1px solid var(--rule); max-width:var(--container); margin-inline:auto;">
+
+<!-- ============== TYPOGRAPHY ============== -->
+<section id="typography" class="container section">
+  <div class="rule-ornate"><span>I. &nbsp; Typography</span></div>
+
+  <div class="grid grid--2" style="gap: var(--s-8); align-items:start">
+    <div>
+      <h6>Display — Marcellus / Aviano</h6>
+      <p class="display" style="font-size: var(--fs-64); margin:0;">Tradition</p>
+      <p class="caption" style="margin-top: var(--s-3)">--display · h1 · h2</p>
+    </div>
+    <div>
+      <h6>Titling — Cinzel / Columbia</h6>
+      <p style="font-family: var(--titling); font-size: var(--fs-36); letter-spacing: var(--tracking-widest); text-transform: uppercase; margin:0;">Vernacular</p>
+      <p class="caption" style="margin-top: var(--s-3)">--titling · h4 · eyebrows</p>
+    </div>
+    <div>
+      <h6>Body Serif — Spectral / URW Antiqua</h6>
+      <p style="font-family: var(--serif); font-size: var(--fs-24); margin:0;">The white-painted clapboard cottage with its broad porch and dormered roof — a fixture of the South.</p>
+      <p style="font-family: var(--serif); font-style: italic; font-size: var(--fs-21); margin-top: var(--s-3); color: var(--fg-muted)">Italics for lead paragraphs and editorial pull-text.</p>
+      <p class="caption" style="margin-top: var(--s-3)">--serif · body · h3 italic</p>
+    </div>
+    <div>
+      <h6>Condensed Sans — Oswald / Franklin Gothic</h6>
+      <p style="font-family: var(--sans-cond); font-size: var(--fs-24); letter-spacing: var(--tracking-wider); text-transform: uppercase; margin:0;">Plan Notes · Sheet Index</p>
+      <p class="compressed" style="font-size: var(--fs-30); margin-top: var(--s-3)">Compressed for Captions &amp; Tags</p>
+      <p class="caption" style="margin-top: var(--s-3)">--sans-cond · --sans-comp · labels, h5, buttons</p>
+    </div>
+  </div>
+
+  <div class="rule-ornate"><span>Scale</span></div>
+
+  <div class="stack-lg">
+    <div><span class="caption">Display / 96</span><p class="display" style="margin:0;">Aa Bb Cc</p></div>
+    <div><span class="caption">H1 / 64</span><h1 style="margin:0;">The Greek Revival house</h1></div>
+    <div><span class="caption">H2 / 48</span><h2 style="margin:0;">An entry hall, plastered</h2></div>
+    <div><span class="caption">H3 / 36 italic serif</span><h3 style="margin:0;">A note on proportion</h3></div>
+    <div><span class="caption">H4 / 24 titling caps</span><h4 style="margin:0;">Section · Sheet A2.1</h4></div>
+    <div><span class="caption">H5 / 18 condensed caps</span><h5 style="margin:0;">Material Schedule</h5></div>
+    <div><span class="caption">H6 / 14 condensed caps muted</span><h6 style="margin:0;">Subhead</h6></div>
+    <div><span class="caption">Lead / 21 italic serif</span><p class="lead" style="margin:0;">A studio rooted in classical Southern residential architecture.</p></div>
+    <div><span class="caption">Body / 18 serif</span><p style="margin:0;">Pleasing proportions and a confident hierarchy carry the eye through a drawing set just as they do through a paragraph. Long-form serif body type is set at 18px / 1.7 line-height for comfortable reading across letters, specs, and project narratives.</p></div>
+  </div>
+</section>
+
+<!-- ============== COLOR ============== -->
+<section id="color" class="container section">
+  <div class="rule-ornate"><span>II. &nbsp; Color</span></div>
+
+  <h6>Neutrals</h6>
+  <div class="grid grid--4">
+    <div class="swatch" style="background:#F6F1E8"></div>
+    <div class="swatch" style="background:#EFE8DA"></div>
+    <div class="swatch" style="background:#E6DDC9"></div>
+    <div class="swatch" style="background:#9B8E7C"></div>
+  </div>
+  <div class="grid grid--4" style="gap: var(--gutter); margin-top: var(--s-3)">
+    <div><p class="caption">Paper</p><p class="muted small">#F6F1E8 · --c-paper</p></div>
+    <div><p class="caption">Panel</p><p class="muted small">#EFE8DA · --c-paper-2</p></div>
+    <div><p class="caption">Bone</p><p class="muted small">#E6DDC9 · --c-bone</p></div>
+    <div><p class="caption">Stone</p><p class="muted small">#9B8E7C · --c-stone</p></div>
+  </div>
+
+  <h6 style="margin-top: var(--s-7)">Inks</h6>
+  <div class="grid grid--4">
+    <div class="swatch" style="background:#6B6055"></div>
+    <div class="swatch" style="background:#3A332C"></div>
+    <div class="swatch" style="background:#2B2925"></div>
+    <div class="swatch" style="background:#1F1B17"></div>
+  </div>
+  <div class="grid grid--4" style="gap: var(--gutter); margin-top: var(--s-3)">
+    <div><p class="caption">Muted</p><p class="muted small">#6B6055 · --c-ink-3</p></div>
+    <div><p class="caption">Body</p><p class="muted small">#3A332C · --c-ink-2</p></div>
+    <div><p class="caption">Charcoal</p><p class="muted small">#2B2925 · --c-charcoal</p></div>
+    <div><p class="caption">Ink</p><p class="muted small">#1F1B17 · --c-ink</p></div>
+  </div>
+
+  <h6 style="margin-top: var(--s-7)">Accents</h6>
+  <div class="grid grid--3">
+    <div class="swatch swatch--tall" style="background:#8B6B3D"></div>
+    <div class="swatch swatch--tall" style="background:#6B7A5A"></div>
+    <div class="swatch swatch--tall" style="background:#B26B4E"></div>
+  </div>
+  <div class="grid grid--3" style="gap: var(--gutter); margin-top: var(--s-3)">
+    <div><p class="caption">Weathered Bronze</p><p class="muted small">#8B6B3D · --c-bronze · primary accent</p></div>
+    <div><p class="caption">Heritage Sage</p><p class="muted small">#6B7A5A · --c-sage</p></div>
+    <div><p class="caption">Terracotta</p><p class="muted small">#B26B4E · --c-clay</p></div>
+  </div>
+</section>
+
+<!-- ============== SPACING ============== -->
+<section id="spacing" class="container section">
+  <div class="rule-ornate"><span>III. &nbsp; Spacing &amp; Grid</span></div>
+
+  <div class="grid grid--2" style="gap: var(--s-8); align-items: start">
+    <div>
+      <h6>Spacing scale</h6>
+      <div class="stack-sm">
+        <div class="space-row"><span class="caption">--s-1 · 4</span><span class="space-bar" style="width:4px"></span></div>
+        <div class="space-row"><span class="caption">--s-2 · 8</span><span class="space-bar" style="width:8px"></span></div>
+        <div class="space-row"><span class="caption">--s-3 · 12</span><span class="space-bar" style="width:12px"></span></div>
+        <div class="space-row"><span class="caption">--s-4 · 16</span><span class="space-bar" style="width:16px"></span></div>
+        <div class="space-row"><span class="caption">--s-5 · 24</span><span class="space-bar" style="width:24px"></span></div>
+        <div class="space-row"><span class="caption">--s-6 · 32</span><span class="space-bar" style="width:32px"></span></div>
+        <div class="space-row"><span class="caption">--s-7 · 48</span><span class="space-bar" style="width:48px"></span></div>
+        <div class="space-row"><span class="caption">--s-8 · 64</span><span class="space-bar" style="width:64px"></span></div>
+        <div class="space-row"><span class="caption">--s-9 · 96</span><span class="space-bar" style="width:96px"></span></div>
+        <div class="space-row"><span class="caption">--s-10 · 128</span><span class="space-bar" style="width:128px"></span></div>
+      </div>
+    </div>
+    <div>
+      <h6>Containers</h6>
+      <table class="table">
+        <thead><tr><th>Token</th><th>Width</th><th>Use</th></tr></thead>
+        <tbody>
+          <tr><td>--container</td><td>72rem · 1152</td><td>Default page</td></tr>
+          <tr><td>--container--read</td><td>56rem · 896</td><td>Long-form reading</td></tr>
+          <tr><td>--container--sm</td><td>40rem · 640</td><td>Forms, narrow blocks</td></tr>
+        </tbody>
+      </table>
+
+      <h6 style="margin-top: var(--s-6)">Grid</h6>
+      <div class="grid grid--12 demo-grid">
+        <div></div><div></div><div></div><div></div><div></div><div></div>
+        <div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+      <p class="caption" style="margin-top: var(--s-3)">12-column · gutter var(--s-5)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== COMPONENTS ============== -->
+<section id="components" class="container section">
+  <div class="rule-ornate"><span>IV. &nbsp; Components</span></div>
+
+  <!-- Buttons -->
+  <h4>Buttons</h4>
+  <div class="cluster" style="margin-top: var(--s-4)">
+    <a class="btn" href="#">Primary action</a>
+    <a class="btn btn--ghost" href="#">Ghost</a>
+    <a class="btn btn--accent" href="#">Bronze accent</a>
+    <a class="btn btn--link" href="#">Text link</a>
+  </div>
+
+  <!-- Cards -->
+  <h4 style="margin-top: var(--s-8)">Cards</h4>
+  <div class="grid grid--3" style="margin-top: var(--s-4)">
+    <article class="card">
+      <span class="eyebrow">Project</span>
+      <h3 class="card__title">Mountain Brook Residence</h3>
+      <p>A modest Greek Revival cottage reworked for a young family, with a screened porch added to the south elevation.</p>
+      <div class="card__meta">Birmingham, AL · 2026</div>
+    </article>
+    <article class="card">
+      <span class="eyebrow">Project</span>
+      <h3 class="card__title">English Village Addition</h3>
+      <p>A side-yard kitchen and pantry wing, detailed to disappear into the original 1928 elevation.</p>
+      <div class="card__meta">Mountain Brook · 2025</div>
+    </article>
+    <article class="card">
+      <span class="eyebrow">Study</span>
+      <h3 class="card__title">Greek Revival Cottage</h3>
+      <p>A type study of the one-story side-hall cottage as a starter house for infill lots.</p>
+      <div class="card__meta">Practice study</div>
+    </article>
+  </div>
+
+  <!-- Form -->
+  <div class="grid grid--2" style="margin-top: var(--s-8); align-items:start">
+    <div>
+      <h4>Forms</h4>
+      <form class="container--sm" style="padding:0; margin-top: var(--s-5)">
+        <div class="field">
+          <label for="name">Client name</label>
+          <input id="name" type="text" placeholder="Mr. &amp; Mrs. Smith">
+        </div>
+        <div class="field">
+          <label for="project">Project type</label>
+          <select id="project">
+            <option>New construction</option>
+            <option>Addition / renovation</option>
+            <option>Pattern-book home</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="notes">Project notes</label>
+          <textarea id="notes" placeholder="Site, program, budget&hellip;"></textarea>
+          <span class="field__help">Brief sketch is enough — we'll follow up by phone.</span>
+        </div>
+        <button class="btn" type="button">Submit inquiry</button>
+      </form>
+    </div>
+
+    <div>
+      <h4>Tags &amp; Callouts</h4>
+      <div class="cluster" style="margin-top: var(--s-5)">
+        <span class="tag">Schematic</span>
+        <span class="tag tag--accent">Issued for Permit</span>
+        <span class="tag tag--sage">In Review</span>
+        <span class="tag tag--clay">Revised</span>
+      </div>
+
+      <div class="callout" style="margin-top: var(--s-6)">
+        <div class="callout__label">Note</div>
+        <p style="margin:0">Verify all dimensions in field prior to fabrication. Do not scale drawings.</p>
+      </div>
+
+      <blockquote>
+        Architecture is the learned game, correct and magnificent, of forms assembled in the light.
+        <cite>— Le Corbusier</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <h4 style="margin-top: var(--s-8)">Tables</h4>
+  <table class="table" style="margin-top: var(--s-4)">
+    <thead>
+      <tr><th>Sheet</th><th>Title</th><th>Scale</th><th>Issued</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>A0.0</td><td>Cover &amp; Sheet Index</td><td>—</td><td>05 / 30 / 26</td></tr>
+      <tr><td>A1.1</td><td>Site Plan</td><td>1" = 20'</td><td>05 / 30 / 26</td></tr>
+      <tr><td>A2.1</td><td>First Floor Plan</td><td>1/4" = 1'</td><td>05 / 30 / 26</td></tr>
+      <tr><td>A3.1</td><td>Exterior Elevations</td><td>1/4" = 1'</td><td>05 / 30 / 26</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer class="container section--sm" style="border-top: 1px solid var(--rule); margin-top: var(--s-8)">
+  <div class="cluster" style="justify-content:space-between">
+    <span class="caption">Carlisle &amp; Co. · Birmingham, Alabama</span>
+    <span class="caption">Design System v 1.0 · 2026</span>
+  </div>
+</footer>
+
+<style>
+  /* Showcase-only helpers (not part of the system) */
+  .swatch { height: 88px; border: var(--hairline) solid var(--rule); }
+  .swatch--tall { height: 128px; }
+  .space-row { display: flex; align-items: center; gap: var(--s-4); height: 24px; }
+  .space-bar { display: inline-block; height: 8px; background: var(--c-bronze); }
+  .demo-grid > div { height: 48px; background: var(--bg-panel); border: var(--hairline) solid var(--rule); }
+</style>
+
+</body>
+</html>
