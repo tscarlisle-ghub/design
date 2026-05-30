@@ -1,0 +1,141 @@
+/* ════════════════════════════════════════════════════════════════
+   Carlisle Moore Architects — Design Tokens
+   Colors + Type foundations for all brand work.
+
+   Fonts are served from the firm's Adobe Fonts (Typekit) kit.
+   Keep this @import at the top of any stylesheet that uses the
+   --display / --titling / --serif / --sans-* families.
+   ════════════════════════════════════════════════════════════════ */
+
+@import url("https://use.typekit.net/wup0iix.css");
+
+:root {
+  /* ─────────────────────────────────────────────
+     COLOR — base palette
+     A warm editorial system: terracotta "rust" on
+     a cream "paper", with soft brown inks for text.
+     ───────────────────────────────────────────── */
+
+  /* Brand rust (terracotta) — the single accent */
+  --rust:       #A2512D;   /* primary accent, links, numerals, rules */
+  --rust-mid:   #B57340;   /* lighter rust, hover bridges */
+  --rust-soft:  #E2BFA7;   /* muted rust on dark grounds */
+  --rust-wash:  #F2E2D2;   /* faint rust tint for fills */
+
+  /* Ink (warm browns) — text */
+  --ink:        #2A2520;   /* primary body + headings */
+  --ink-soft:   #6E5E52;   /* secondary text, captions */
+  --ink-mute:   #8E7E72;   /* tertiary, eyebrows, labels */
+
+  /* Paper (creams) — grounds */
+  --paper:      #FBF6EE;   /* page background */
+  --paper-edge: #F1E9DA;   /* image placeholders, soft cards */
+  --paper-deep: #ECE3D0;   /* deeper card fill */
+
+  /* Night — dark ground (footer, cover) */
+  --night:      #1a1714;
+
+  /* Hairlines — thin dividing rules */
+  --hairline:        rgba(162, 81, 45, 0.32);  /* rust @ 32% */
+  --hairline-strong: rgba(162, 81, 45, 0.65);  /* rust @ 65% */
+  --hairline-ink:    rgba(42, 37, 32, 0.14);   /* ink @ 14% */
+
+  /* ─────────────────────────────────────────────
+     TYPE — families
+     ───────────────────────────────────────────── */
+  --display:   "aviano-sans", "Optima", serif;                 /* logo-voice caps, labels */
+  --titling:   "columbia-titling", "Trajan Pro", serif;        /* eyebrows, micro-labels */
+  --serif:     "urw-antiqua", "Iowan Old Style", Georgia, serif;/* body, italic headlines */
+  --sans-cond: "franklin-gothic-condensed", "Franklin Gothic", sans-serif;
+  --sans-comp: "franklin-gothic-compressed", "franklin-gothic-condensed", sans-serif; /* big numerals, prices */
+
+  /* ─────────────────────────────────────────────
+     TYPE — semantic roles
+     ───────────────────────────────────────────── */
+  /* Eyebrow / micro-label (Columbia Titling, wide tracking, uppercase) */
+  --eyebrow-family: var(--titling);
+  --eyebrow-size: 10px;
+  --eyebrow-tracking: .36em;
+
+  /* Editorial headline (URW Antiqua italic) */
+  --h2-family: var(--serif);
+  --h2-style: italic;
+  --h2-size: clamp(32px, 3.6vw, 48px);
+  --h2-line: 1.05;
+
+  /* Body copy (URW Antiqua roman) */
+  --body-family: var(--serif);
+  --body-size: 17.5px;
+  --body-line: 1.62;
+
+  /* Label / nameplate (Aviano Sans bold, uppercase) */
+  --label-family: var(--display);
+  --label-weight: 700;
+  --label-tracking: .07em;
+
+  /* Numeral / price (Franklin Gothic Compressed) */
+  --num-family: var(--sans-comp);
+
+  /* Layout */
+  --page-max: 1180px;
+  --gut: 80px;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   SEMANTIC ELEMENT DEFAULTS
+   Optional helper classes mirroring the site's editorial roles.
+   Use the tokens above directly when composing custom layouts.
+   ════════════════════════════════════════════════════════════════ */
+
+.cm-eyebrow {
+  font-family: var(--eyebrow-family);
+  font-size: var(--eyebrow-size);
+  letter-spacing: var(--eyebrow-tracking);
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.cm-eyebrow .accent { color: var(--rust); }
+
+.cm-h2 {
+  font-family: var(--h2-family);
+  font-style: var(--h2-style);
+  font-weight: 400;
+  font-size: var(--h2-size);
+  line-height: var(--h2-line);
+  letter-spacing: -.005em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.cm-h2 em { color: var(--rust); }
+
+.cm-body {
+  font-family: var(--body-family);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  color: var(--ink);
+  text-wrap: pretty;
+}
+.cm-body em { color: var(--rust); }
+
+.cm-label {
+  font-family: var(--label-family);
+  font-weight: var(--label-weight);
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.cm-num {
+  font-family: var(--num-family);
+  color: var(--rust);
+  line-height: .82;
+}
+
+/* A 40×2px rust rule — the recurring divider motif */
+.cm-rule {
+  width: 40px;
+  height: 2px;
+  background: var(--rust);
+  border: none;
+  margin: 16px 0;
+}
